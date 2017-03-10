@@ -10,9 +10,9 @@ namespace Laba01
             StreamReader sr = new StreamReader("input.txt");
             string chch = sr.ReadLine();
             string[] mas = chch.Split(' ');
-            int a = Int32.Parse(mas[0]);
-            int b = Int32.Parse(mas[1]);
-            int c = a + b;
+            long a = Int32.Parse(mas[0]);
+            long b = Int32.Parse(mas[1]);
+            long c = a + b*b;
             sr.Close();
             string d = c.ToString();
             StreamWriter sw = new StreamWriter("output.txt");//для записи
